@@ -4,4 +4,4 @@ const StreamEdit = () => {
     return <div>StreamEdit</div>
 };
 
-expor default StreamEdit;
+export default StreamEdit;

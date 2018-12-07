@@ -4,4 +4,4 @@ const StreamCreate = () => {
     return <div>StreamCreate</div>
 };
 
-expor default StreamCreate;
+export default StreamCreate;
