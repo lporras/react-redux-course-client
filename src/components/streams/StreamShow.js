@@ -8,7 +8,17 @@ class StreamShow extends React.Component {
         this.props.fetchStream(id);
     }
     render() {
-        return <div>StreamShow</div>
+        const { title, description } = this.props.stream;
+        if (this.props.stream) {
+            return (
+                <div>
+                    <h1>{title}</h1>
+                    <h5>{description}</h5>
+                </div>
+            );
+        } else {
+            return <div>Loading...</div>
+        }
     }
 };
 
