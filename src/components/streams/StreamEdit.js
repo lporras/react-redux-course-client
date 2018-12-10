@@ -8,7 +8,6 @@ class StreamEdit extends React.Component {
         this.props.fetchStream(id);
     }
     render() {
-        console.log(this.props);
         if (this.props.stream) {
             return (
                 <h1>Edit Stream</h1>
