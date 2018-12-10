@@ -45,8 +45,7 @@ export const fetchStream = (id) => async dispatch => {
 };
 
 export const editStream = (id, formValues) => async (dispatch, getState) => {
-    const {userId} = getState().auth;
-    const response = await streams.put(`/streams/${id}`, {...formValues, userId });
+    const response = await streams.patch(`/streams/${id}`, formValues);
 
     dispatch({type: EDIT_STREAM, payload: response.data});
     //Navigate users to posts list
